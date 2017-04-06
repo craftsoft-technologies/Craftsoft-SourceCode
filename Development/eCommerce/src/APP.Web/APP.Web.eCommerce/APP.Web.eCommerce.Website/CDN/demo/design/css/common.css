@@ -1,0 +1,425 @@
+﻿@charset "utf-8";
+
+/*************************common.css Menu *************************/
+
+/*-----------------------------------------------------------------
+  Layout
+------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------
+    Box
+------------------------------------------------------------------*/
+#container{
+padding: 15px 0 0 0;
+}
+
+#content{
+width: 960px;
+margin: 15px auto 0 auto;
+}
+/*-----------------------------------------------------------------
+  Header
+------------------------------------------------------------------*/
+.headerW01 div.navArea{
+width: 960px;
+padding: 0 0 0 0;
+margin: 0 auto;
+}
+
+.headerW02 div.navArea{
+width: 950px;
+margin: 0 auto;
+}
+
+.headerW01 ul.navCategory{
+width: 960px;
+}
+
+.headerW02 ul.navCategory{
+width: 950px;
+}
+
+#header{
+background: none;
+margin: -6px auto 15px auto;
+position: relative;
+z-index: 10000;
+line-height: 0;
+}
+
+#header ul li{
+float: left;
+font-size: 0%;
+line-height: 100%;
+}
+
+#header div.navArea{
+position: relative;
+background: #ffffff;
+height: 50px;
+}
+
+*+html #header div.navAreaH02{
+height: 100px;
+}
+
+#header div.navArea div.siteLogo{
+float: left;
+font-size: 0%;
+line-height: 100%;
+}
+
+#header div.navArea ul#navHeader{
+float: left;
+}
+
+#header div.navArea ul#navHeader > li.focus{
+margin: 0 0 50px 0;
+}
+
+#header ul li.gu{
+border-right: 1px solid #dcdcdc;
+}
+
+#header div.navArea ul.navUtility{
+float: right;
+}
+
+#header #gnav_cart_target{
+z-index: 1000;
+display: none;
+}
+
+#header div.navArea li ul.info{
+background: #3c3c3c;
+position: absolute;
+width: 111px;
+padding: 10px 12px 0 12px;
+top: 50px;
+right: 0px;
+}
+
+#header div.navArea li ul.hidden{
+display: none;
+}
+
+#header div.navArea li ul.info li{
+position: relative;
+float: none;
+height: auto;
+text-align: right;
+font-size: 11px;
+line-height: 100%;
+color: #ffffff;
+margin: 0 0 10px 0;
+padding: 0;
+}
+
+#header div.navArea li ul.info li.msg{
+text-align: left;
+font-size: 10px;
+line-height: 140%;
+color: #fffb31;
+}
+
+#header div.navArea li ul.info li img{
+float: left;
+}
+
+#header ul.navCategory{
+background: #ffffff;
+position: absolute;
+top: 50px;
+left: 0px;
+height: 50px;
+}
+
+#header ul.bgBlack{
+background: #000000;
+}
+
+#header ul.navCategoryHidden{
+display: none;
+}
+
+#header ul.navCategory li{
+float: left;
+position: relative;
+z-index: 10;
+}
+
+#header ul.navCategory li ul.hidden{
+display: none;
+}
+
+#header ul.navCategory li ul.sub{
+background: #000000 url(../images/icon/bgr_nav_sub_UQ.gif) no-repeat;
+width: 169px;
+padding: 18px 14px 10px 14px;
+line-height: 160%;
+position: absolute;
+top: 50px;
+left: 0px;
+z-index: 100;
+}
+
+#header ul.navCategory li ul.sub li{
+float: none;
+}
+
+#header ul.navCategory li ul.sub>li>img{
+margin: 0 0 9px;
+}
+#header ul.navCategory li ul.sub>li>ul{
+margin:0 0 5px;
+}
+#header ul.navCategory li ul.sub>li>a,
+#header ul.navCategory li ul.sub>li>ul>li>a{
+background: url(../images/icon/bgr_arrow_white.gif) no-repeat 0px 5px;
+font-size: 11px;
+line-height: 160%;
+padding: 0 0 9px 14px;
+display: block;
+}
+
+#header ul.navCategory li ul.sub>li.focus,
+#header ul.navCategory li ul.sub>li>ul>li.focus{
+background: url(../images/icon/bgr_arrow_red.gif) no-repeat 0px 5px;
+}
+
+.navCategory{
+z-index: 999;
+}
+
+.navCategoryHidden{
+z-index:1000;
+}
+#header ul li.search{
+background: #3c3c3c url(../images/icon/bgr_header_search_UQ.gif) no-repeat;
+font-size: 12px;
+line-height: 100%;
+padding: 13px 13px 0;
+width:160px;
+height: 37px;
+color: #ffffff;
+}
+
+#header ul li.inputFocus{
+background-position: 0 -50px;
+}
+
+#header ul li.search form.topSearch{
+width: 160px;
+}
+
+#header ul li.search input.txt{
+background: none;
+width: 110px;
+height: 20px;
+padding: 2px 4px;
+border: none;
+outline: none;
+color: #ffffff;
+background:url(data:image/gif;base64,R0lGODlhAQABAIAAAP//////zCH5BAEHAAAALAAAAAABAAEAAAICRAEAOw==);
+}
+
+#header ul li.inputFocus input.txt{
+color: #000000;
+}
+
+#header ul li.search input.btn{
+float:right;
+font-size: 0%;
+line-height: 100%;
+}
+
+
+#header ul li.search input{
+vertical-align: top;
+}
+
+#header ul li.search form span.btn_reset{
+	background: url("../images/icon/btn_reset.png") no-repeat;
+	position:absolute;
+	top:15px;
+	right:38px;
+	display:block;
+	color:#fff;
+	width:20px;
+	height:20px;
+	cursor: pointer;
+	text-indent:-10000px;
+}
+
+/*for IE7*/
+* + html #header ul li.search form.topSearch{
+position:relative;
+}
+* + html #header ul li.search input.btn{
+position:absolute;
+top:0;
+right:0;
+}
+* + html #header ul li.search form span.btn_reset{
+	top:3px;
+	right:24px;
+}
+
+.headerW02 ul li.search input.txt{
+width: 89px !important;
+}
+
+#header ul.navCategory a:link{ text-decoration:none; color:#ffffff; }
+#header ul.navCategory a:visited{ text-decoration:none; color:#ffffff; }
+#header ul.navCategory a:hover{ text-decoration:none; color:#ff0000; }
+#header ul.navCategory a:active{ text-decoration:none; color:#ff0000; }
+
+#header ul.navCategory li.focus a:link{ text-decoration:none; color:#ff0000; }
+#header ul.navCategory li.focus a:visited{ text-decoration:none; color:#ff0000; }
+#header ul.navCategory li.focus a:hover{ text-decoration:none; color:#ff0000; }
+#header ul.navCategory li.focus a:active{ text-decoration:none; color:#ff0000; }
+
+
+
+/*-----------------------------------------------------------------
+  Footer
+------------------------------------------------------------------*/
+#footer{
+width: 960px;
+margin: 15px auto 0 auto;
+padding: 0 0 20px 0;
+}
+
+#footer div.siteinfo{
+background: #000000;
+position: relative;
+height: 50px;
+}
+
+#footer div.siteinfo p.sitename{
+float: left;
+font-size: 0%;
+line-height: 100%;
+}
+
+#footer div.siteinfo ul.utility{
+float: left;
+font-size: 0%;
+line-height: 100%;
+margin: 15px 0 0 6px;
+}
+
+#footer div.siteinfo ul.utility li{
+float: left;
+}
+
+#footer div.siteinfo #goPageTop{
+position: absolute;
+top: 14px;
+right: 13px;
+}
+
+#footer dl.world{
+font-size: 0%;
+line-height: 100%;
+}
+
+#footer dl.world dt{
+float: left;
+margin: 11px 3px 0 0;
+}
+
+#footer dl.world dd{
+float: left;
+margin: 11px 0 0 0;
+}
+
+#footer dl.world dd.second{
+margin: 11px 0 0 91px;
+}
+
+#footer dl.world dd.last{
+overflow:hidden;
+}
+
+#footer dl.world dd.last img{
+margin-right:-1px;
+}
+
+#footer p.copyright{
+font-size: 0%;
+line-height: 100%;
+margin: 11px 0 0 0;
+}
+
+
+/*-----------------------------------------------------------------
+  Common style
+------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------
+    Title
+------------------------------------------------------------------*/
+.tittype01{
+background: #000000 url(../images/icon/logo_uq_01.gif) no-repeat right top;
+position: relative;
+height: 50px;
+margin: 15px 0 0 0;
+}
+
+.tittype01 img.tit{
+position: absolute;
+top: 16px;
+left: 16px;
+}
+
+.tittype02{
+background: #666666;
+position: relative;
+height: 50px;
+margin: 15px 0 0 0;
+}
+
+.tittype02b{
+background: #666666;
+position: relative;
+height: 77px;
+margin: 15px 0 0 0;
+}
+
+
+.tittype01 span,
+.tittype02 span,
+.tittype02b span{
+font-size: 138.5%;
+line-height: 110%;
+padding: 15px 0 0 16px;
+font-weight: normal;
+color: #ffffff;
+display: block;
+}
+
+.tittype03{
+float: left;
+font-size: 0%;
+line-height: 100%;
+}
+
+.tittype02 img.tit,
+.tittype02b img.tit{
+position: absolute;
+top: 16px;
+left: 17px;
+}
+
+.tittype02 img.pagetop{
+position: absolute;
+top: 15px;
+right: 16px;
+}
+
+.tittype02b img.pagetop{
+position: absolute;
+top: 27px;
+right: 16px;
+}

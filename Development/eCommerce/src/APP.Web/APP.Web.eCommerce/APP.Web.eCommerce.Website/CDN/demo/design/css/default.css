@@ -1,0 +1,106 @@
+﻿@charset "utf-8";
+
+/***********************default.css Menu *************************/
+
+
+/*----------------------------------------------------------------
+    reset
+----------------------------------------------------------------*/
+body,div,td,p,ul,ol,dl,dd,img,form,h1,h2,h3,h4,h5{
+margin: 0;
+padding: 0;
+border: none;
+font-style: normal;
+text-align: left;
+zoom: 1;
+}
+
+/*----------------------------------------------------------------
+    base
+----------------------------------------------------------------*/
+body{
+font:13px "メイリオ",'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',"ＭＳ Ｐゴシック",sans-serif;
+color: #000000;
+background: #e6e6e6;
+}
+
+table{
+border-collapse: collapse;
+font-family: inherit;
+}
+
+h1,h2,h3,h4,h5{
+font-size:100%;
+font-weight:bold;
+}
+
+input,textarea,select{
+font-family: inherit;
+}
+
+textarea{
+resize: none;
+}
+
+th,td{
+border-collapse: collapse;
+}
+
+ul,ol{
+list-style-type: none;
+}
+
+/*----------------------------------------------------------------
+    link
+----------------------------------------------------------------*/
+a:link{ text-decoration:none; color:#006699; }
+a:visited{ text-decoration:none; color:#006699; }
+a:hover{ text-decoration:underline; color:#006699; }
+a:active{ text-decoration:underline; color:#006699; }
+
+/*----------------------------------------------------------------
+    float
+----------------------------------------------------------------*/
+.floatright{
+display: block;
+float: right;
+}
+
+.floatleft{
+display: block;
+float: left;
+}
+
+/*----------------------------------------------------------------
+    clearfix
+----------------------------------------------------------------*/
+.clearfix:after{ content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.clearfix{ display:inline-block; }
+/*\*/
+* html .clearfix{ height:1%; }
+.clearfix{ display:block; }
+/**/
+
+/*----------------------------------------------------------------
+    bold
+----------------------------------------------------------------*/
+.txtbold{
+font-weight: bold;
+}
+
+/*----------------------------------------------------------------
+    align
+----------------------------------------------------------------*/
+.alignleft{
+text-align: left;
+}
+
+.alignright{
+text-align: right;
+}
+
+.aligncenter{
+text-align: center;
+}
+
+.imgover{}

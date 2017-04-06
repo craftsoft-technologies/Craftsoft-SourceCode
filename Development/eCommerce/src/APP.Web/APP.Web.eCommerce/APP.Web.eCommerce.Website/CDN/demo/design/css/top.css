@@ -1,0 +1,320 @@
+/* content_block section */
+.content_block.section {
+	margin: 15px -16px 0 0;
+	float: none;
+}
+
+/* linenCollection */
+.linenCollectionBlock .sectionTitle {
+	margin: 0;
+	padding: 0;
+}
+ul.linenCollection {
+	overflow: hidden;
+	width: 930px;
+	padding: 0 15px 15px 15px;
+	background-color: #FFFFFF;
+	margin-bottom: 15px;
+}
+ul.linenCollection li {
+	float: left;
+}
+ul.linenCollection li img {
+	display: block;
+}
+
+/* featureItems */
+.featureItems li {
+/*	border-bottom: 1px solid #E5E5E5;*/
+	margin: 0;
+}
+.featureItems li.items {
+	height: 109px;
+	margin: 0;
+	position: relative;
+}
+*+ html .featureItems li.items {
+	border: none;
+	margin-top: -1px;
+}
+.featureItems li.items .itemImage {
+	display: block;
+	position: absolute;
+}
+.featureItems li.items .itemDescription {
+	display: block;
+	margin-left: 105px;
+	padding-top: 10px;
+	color: #000000;
+	text-decoration: none;
+}
+.featureItems li.items a {
+	line-height: 1.5;
+	text-decoration: none;
+	font-family: メイリオ, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック';
+	font-weight: nomal;
+	font-size: 12px;
+	color: #333333;
+	display: block;
+	height: 100%;
+	padding: 0 10px;
+	margin: 0;
+}
+.featureItems li.items a:hover {
+	text-decoration: underline;
+}
+.featureItems li.items .itemPrice {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	margin-left: 105px;
+	margin-bottom: 20px;
+	font-family: メイリオ, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック';
+	font-weight: bold;
+	font-size: 12px;
+	color: #ff0000;
+	zoom: 1;
+}
+.featureItems li.foot {
+	height: 39px;
+	border: none;
+	text-align: right;
+}
+.featureItems li.foot span {
+	display: inline-block;
+}
+*+ html .featureItems li.foot {
+	margin-top: -1px;
+	height: 40px;
+}
+*+ html .featureItems li.foot span {
+	display: inline;
+}
+
+/* newsTopics */
+.newsTopics li {
+	margin: 0;
+}
+.newsTopics li.newsContents {
+	height: 334px;
+}
+.newsTopics li.foot {
+	height: 32px;
+	border: none;
+	text-align: right;
+}
+.newsTopics li.foot span {
+	display: inline-block;
+}
+*+ html .newsTopics li.foot {
+	height: 32px;
+}
+*+ html .newsTopics li.foot span {
+	display: inline;
+}
+
+/* content_block_list */
+.separatorBold {
+	margin: 0;
+	padding: 15px 0 15px;
+	width: 960px;
+	float: none;
+}
+.separatorBold li {
+	margin: 0;
+}
+.content_block_list.col2 {
+	width: 472px;
+}
+
+/* headline */
+#headline .headlineList {
+	padding: 15px;
+}
+#headline .headlineList .newsList li .date {
+	margin-top: 10px;
+	line-height: 1.6em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color: #999999;
+	display: block;
+}
+#headline .headlineList .newsList li:first-child .date {
+	margin-top: 0;
+}
+
+#headline .headlineList .newsList li a {
+	line-height: 1.6em;
+	display: block;
+	font-family: メイリオ, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック';
+	font-weight: normal;
+	font-size: 12px;
+	color: #1a51bd;
+}
+#headline .imageslide .trim_img {
+	width: 156px;
+	height: 115px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+#headline .imageslide .trim_img .inner {
+	width: 156px;
+	height: 156px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	top: -28px;
+	left: 0px;
+}
+#headline .imageslide .trim_img img {
+	width: 156px;
+	-ms-interpolation-mode: bicubic;
+}
+#headline .imageslide .headline_photos {
+	width: 156px;
+	height: 100px;
+	overflow: hidden;
+	float: left;
+}
+#headline .imageslide .caption .bg {
+	position: absolute;
+	height: 20px;
+	width: 156px;
+	z-index: 11;
+	background-color: #FF0000;
+}
+#headline .imageslide .caption .text {
+	position: absolute;
+	width: 156px;
+	color: #FFF;
+	font-size: 10px;
+	line-height: 20px;
+	z-index: 12;
+	text-align: center;
+	overflow: hidden;
+}
+#headline .imageslide .trim_img .caption {
+	position: absolute;
+	left: 0px;
+	top: 95px;
+	z-index: 10;
+}
+#headline .imageslide .trim_img .caption a {
+	font-family: メイリオ, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック';
+	font-weight: normal;
+	font-size: 10px;
+	color: #ffffff;
+}
+#headline .caroufredsel_wrapper {
+	margin: 0 auto !important;
+}
+
+/* sectionTitle */
+.sectionTitle {
+	padding: 15px 0;
+	background-color: #FFFFFF;
+	margin: 0 0 15px;
+	width: 960px;
+	float: none;
+}
+.sectionTitle li {
+	margin: 0;
+}
+
+/* fbTimeline */
+#fbFeed {
+	height: 166px;
+	overflow: hidden;
+	background-color: #FFFFFF;
+}
+#fbFeed .feedList {
+	border-bottom: 1px solid #ECEEF4;
+}
+#fbFeed .feedList li {
+	margin: 0;
+	height: 33px;
+	vertical-align: middle;
+}
+#fbFeed .feedList li .date {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	color: #666666;
+	width: 55px;
+	display: inline-block;
+	margin-right: 10px;
+	text-decoration: none;
+}
+*+ html #fbFeed .feedList li .date {
+	display: inline;
+}
+
+#fbFeed .feedList li.odd {
+	background-color: #ECEEF4;
+}
+#fbFeed .feedList li a {
+	line-height: 1.6em;
+	font-family: メイリオ, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック';
+	font-weight: normal;
+	font-size: 12px;
+	color: #3b5998;
+	display: block;
+	line-height: 33px;
+	height: 100%;
+	padding: 0 15px;
+}
+
+/* mailMagazine */
+#mailMagazine {
+	position: relative;
+	width: 100%;
+	height: 87px;
+	background-color: #FFFFFF;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+#mailMagazine fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+#mailMagazine .mailMagazineWrapper {
+	padding: 15px;
+	overflow: hidden;
+}
+#mailMagazine .mailMagazineWrapper .text {
+	float: left;
+	display: block;
+}
+#mailMagazine .mailMagazineWrapper .formArea {
+	padding: 0 15px;
+	float: left;
+	overflow: hidden;
+}
+*+ html #mailMagazine .mailMagazineWrapper .formArea {
+	padding: 0 0 0 15px;
+}
+#mailMagazine .mailMagazineWrapper .formArea .inputArea {
+	display: inline;
+	width: 346px;
+	height: 57px;
+	line-height: 57px\9;
+	float: left;
+	border: none;
+	background-color: #ECECEC;
+	color: #989898;
+	vertical-align: middle;
+	font-size: 13px;
+	padding: 0 15px;
+}
+#mailMagazine .mailMagazineWrapper .formArea .imageArea {
+	display: block;
+	float: left;
+}
+#content_blocks {
+	margin-top: 30px;
+	padding-top: 40px;
+}

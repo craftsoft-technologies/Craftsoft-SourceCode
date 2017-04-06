@@ -1,0 +1,851 @@
+﻿@charset "utf-8";
+
+/* header */
+#header {
+	line-height: 0;
+}
+#header #navHeader li.focus ul.navCategoryHidden {
+	display: block;
+}
+#gnav_header {
+	width: 960px;
+	margin: 0 auto 15px;
+	background-color: #ffffff;
+	line-height: 0;
+	height: 50px;
+}
+#gnav_header ul li a,
+#gnav_header p a {
+	font-family: "メイリオ","MS PGothic",Verdana,Helvetica,sans-serif;
+	border: none;
+	outline: none;
+}
+#gnav_wrapper {
+	width: 960px;
+	top: 0;
+	position: relative;
+	z-index: 10000;
+}
+#gnav_header #gnav_main {
+	width: 960px;
+	overflow: visible;
+}
+/** header logo **/
+#gnav_logo {
+	float: left;
+}
+
+/** header horizon style **/
+#gnav_header #navHeader {
+	float: left;
+}
+#gnav_header #navHeader li {
+	float: left;
+}
+#gnav_header #navHeader>li {
+	background-color: #ffffff;
+}
+#gnav_header #navHeader li img {
+	display: block;
+}
+#gnav_header #navUtil {
+	float: right;
+	overflow: inherit;
+	background-color: #3C3C3C;
+}
+#gnav_header #navUtil li {
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	z-index: 10020;
+}
+#gnav_header #navUtil li img {
+	display: block;
+}
+#header div.navArea #gnav_header ul#navHeader > li.focus {
+	margin: 0;
+}
+
+/** header search **/
+#gnav_search {
+	display: block;
+	height: 50px;
+	width: 186px;
+	background-color: #3C3C3C;
+	position: relative;
+}
+#gnav_search form {
+	margin: 13px 10px;
+}
+#gnav_textClear {
+	background-image: url(../images/icon/btn_reset.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	display: block;
+	color: #ffffff;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	text-indent: -10000px;
+	display: none;
+}
+#gnav_search #searchFocus {
+	width: 115px;
+	display: block;
+	float: left;
+	border: 1px solid #000000;
+	height: 22px;
+	padding: 0 22px 0 4px;
+	background-color: #c6c6c6;
+	color: #FFFFFF;
+	outline: none;
+}
+
+#gnav_search #searchFocus:focus {
+	background-color: #fdfdfd;
+	color: #000000;
+}
+
+/** header close button **/
+#gnav_header #navHeader .gnav_category {
+	display: none;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+#gnav_header #navHeader .gnav_category div.classBlock > .gnav_closeArea {
+	overflow: visible;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width:	23px;
+	height: 23px;
+	background-repeat: no-repeat;
+}
+
+#gnav_header #navHeader .gnav_category #gnav_women_arrow ,
+#gnav_header #navHeader .gnav_category #gnav_men_arrow ,
+#gnav_header #navHeader .gnav_category #gnav_kids_arrow ,
+#gnav_header #navHeader .gnav_category #gnav_baby_arrow ,
+#gnav_header #navHeader .gnav_category #gnav_company_arrow {
+    width: 0;
+    height: 0;
+	overflow: visible;
+	margin-bottom: -1px;
+	position: relative;
+	top: 0;
+}
+#header_women.active:after{
+	content: open-quote;
+	position: relative;
+    border-top: 0 solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+    width: 0;
+    height: 0;
+	margin-left: 27px;
+	top: 3px;
+	z-index: 11000;
+}
+#header_men.active:after{
+	content: open-quote;
+	position: relative;
+    border-top: 0 solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+    width: 0;
+    height: 0;
+	margin-left: 27px;
+	top: 3px;
+	z-index: 11000;
+}
+#header_kids.active:after{
+	content: open-quote;
+	position: relative;
+    border-top: 0 solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #ebebeb;
+    border-left: 12px solid transparent;
+    width: 0;
+    height: 0;
+	margin-left: 27px;
+	top: 3px;
+	z-index: 11000;
+}
+#header_baby.active:after{
+	content: open-quote;
+	position: relative;
+    border-top: 0 solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #ebebeb;
+    border-left: 12px solid transparent;
+    width: 0;
+    height: 0;
+	margin-left: 27px;
+	top: 3px;
+	z-index: 11000;
+}
+#header_company.active:after{
+	content: open-quote;
+	position: relative;
+    border-top: 0 solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+    border-left: 12px solid transparent;
+    width: 0;
+    height: 0;
+	margin-left: 25px;
+	top: 3px;
+	z-index: 11000;
+}
+
+#gnav_header #navHeader .gnav_category #gnav_women_arrow {
+	left: 85px;
+}
+#gnav_header #navHeader .gnav_category #gnav_men_arrow {
+	left: 165px;
+}
+#gnav_header #navHeader .gnav_category #gnav_kids_arrow {
+	left: 242px;
+}
+#gnav_header #navHeader .gnav_category #gnav_baby_arrow {
+	left: 232px;
+}
+#gnav_header #navHeader .gnav_category #gnav_company_arrow {
+	left: 298px;
+}
+
+#gnav_header #navHeader .gnav_category .gnav_closeArea p {
+	width: 23px;
+	height: 23px;
+	color: #ffffff;
+}
+#gnav_header #navHeader .gnav_category .gnav_closeArea p span {
+	display: inline-block;
+	position: relative;
+}
+#gnav_header #navHeader .gnav_category .gnav_closeArea p span a {
+	display: block;
+	position: relative;
+}
+
+/** header category **/
+#gnav_header #navHeader .gnav_category {
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 65px;
+	width: 960px;
+	background-color: transparent;
+	box-shadow: rgba(224, 224, 224, 0.1) 0px 0px 40px 10px;
+	-webkit-box-shadow: rgba(224, 224, 224, 0.1) 0px 0px 40px 10px;
+	-moz-box-shadow: rgba(224, 224, 224, 0.1) 0px 0px 40px 10px;
+}
+#gnav_header #navHeader .gnav_category div.classBlock {
+	position: relative;
+	width: 100%;
+	max-height: 585px;
+	overflow: hidden;
+	background-color: #fff;
+}
+#gnav_header #navHeader .gnav_category div#gnav_company.classBlock {
+	background-color: #ffffff;
+}
+#gnav_header #navHeader .gnav_category div.classBlock > div {
+	height: 561px;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock {
+	display:table-cell;
+	padding:  0;
+	margin: 0;
+	vertical-align: top;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock {
+	display:table-cell;
+	width: 162px;
+	padding-left: 4px;
+	vertical-align: top;
+	border-top: 12px solid #ffffff;
+	border-left: 10px solid #ffffff;
+	border-right: 10px solid #ffffff;
+	border-bottom: 12px solid #ffffff;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock.first {
+	padding: 0;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock.last {
+	border-right: 64px solid #ffffff;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock {
+	width: 207px;
+	background-color: #fff;
+	border-top: 13px solid #fff;
+	border-right: none;
+	border-bottom: 13px solid #fff;
+	border-left: none;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock {
+	width: 344px;
+	background-color: #ebebeb;
+	border-top: 12px solid #ebebeb;
+	border-right: 12px solid #ebebeb;
+	border-bottom: 12px solid #ebebeb;
+	border-left: 12px solid #ebebeb;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul {
+ 	position: absolute;
+	width: 344px;
+	display: none;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock {
+	width: 361px;
+	background-color: #ffffff;
+	border-top: 12px solid #ffffff;
+	border-right: 12px solid #ffffff;
+	border-bottom: 12px solid #ffffff;
+	border-left: 12px solid #ffffff;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock h1 {
+	padding: 7px 15px 21px 10px;
+	color: #ff0000;
+	line-height: 18px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: table-cell;
+	font-size: 12px;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock div.headerBanner {
+	margin-bottom: 11px;
+}
+
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul:first-child {
+	display: block;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li {
+	display: table;
+	padding: 0;
+	float: none;
+	width: 100%;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li {
+	padding: 0;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock h1 {
+	font-size: 13px;
+	font-weight: bold;
+	color: #ff0000;
+	line-height: 18px;
+	display: table;
+	width: 100%;
+	height: 34px;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock h1 span,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock h1 a {
+	color: #ff0000;
+	text-decoration: none;
+	display: table-cell;
+	padding: 7px 14px 5px;
+	filter: none;
+	vertical-align: middle;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock h1 a:hover {
+	color: #ffffff;
+	background-color: #ff0000;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock ul li {
+	list-style: none outside none;
+	float: none;
+	display: table;
+	width: 100%;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock ul li a {
+	color: #000000;
+	display: table-cell;
+	text-decoration: none;
+	padding: 7px 14px 5px;
+	font-size: 13px;
+	line-height: 18px;
+	filter: none;
+	height: 34px;
+	vertical-align: middle;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock ul li a:hover {
+	background-color: #ff0000;
+	color: #ffffff;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li a,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li a,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a {
+	color: #ffffff;
+	display: table-cell;
+	text-decoration: none;
+	padding: 7px 14px 5px;
+	font-size: 12px;
+	line-height: 18px;
+	filter: none;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	height: 35px;
+	vertical-align: middle;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li a{
+	padding: 7px 24px 5px;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li a{
+	height: 36px;
+	padding: 7px 12px 5px;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a {
+	padding: 10px 14px 10px 25px;
+	background-image: url(../images/icon/gnav_icon_thirdBlock-burette_off.gif);
+	background-position: 12px center;
+	background-repeat: no-repeat;
+	line-height: 16px;
+}
+
+
+
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li a:link,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li a:visited,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li a:active{
+	color: #000;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li.gfocus a,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li a.active {
+	background-color: #ebebeb;
+	background-image: url(../images/icon/gnav_icon_firstBlock-burette.gif);
+	background-position: 190px center;
+	background-repeat: no-repeat;
+	color: #f00;
+}
+/*standalone links for firstBlock*/
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul.gnav_firstDirectLinkList {
+	margin-top: 15px;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul.gnav_firstDirectLinkList li.gfocus a,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul.gnav_firstDirectLinkList li a.active {
+	background-image: none;
+	background-color: #f00;
+	color: #fff;
+}
+
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li a:link,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li a:visited,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li a:active {
+	color: #000;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li.gfocus a,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li a:hover {
+	background-color: #f00;
+	color: #fff;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a {
+	color: #000;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a:link,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a:visited,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a:active {
+	color: #000;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a:hover {
+	background-image: url(../images/icon/gnav_icon_thirdBlock-burette_on.gif);
+	color: #ffffff;
+	background-color: #ff0000;
+}
+
+
+
+/** top keyvisual **/
+#gnav_header #content_banner_loading {
+	z-index: 5;
+}
+
+/** header cart **/
+#gnav_header #gnav_main>ul>li {
+	height: 50px !important;
+}
+#gnav_header #gnav_main #gnav_logo a,
+#gnav_header #gnav_main>ul>li>a img {
+	z-index: 10020;
+	position: relative;
+}
+#gnav_header #gnav_cart_trigger {
+	position: relative;
+}
+#gnav_header #gnav_cart_target {
+	background: none repeat scroll 0 0 #5A5A5A;
+	padding: 10px 12px 0;
+	position: absolute;
+	right: -10px;
+	top: 50px;
+	width: 180px;
+}
+#gnav_header #gnav_cart_target li {
+	color: #FFFFFF;
+	float: none;
+	font-size: 10px;
+	height: auto;
+	line-height: 100%;
+	margin: 0 0 10px;
+	padding: 0;
+	position: relative;
+	text-align: right;
+}
+
+#gnav_header #gnav_cart_target li img {
+	float: left;
+}
+#gnav_header #gnav_cart_target li.msg {
+	color: #FFFB31;
+	font-size: 9px;
+	line-height: 140%;
+	text-align: left;
+}
+
+/* IE7 */
+*+ html body.ltIE8.ltIE7 #header div.navAreaH01,
+*+ html body.ltIE8.ltIE7 #header div.navAreaH02 {
+	height: 50px;
+}
+body.ltIE8.ltIE7 #gnav_search #searchFocus {
+	width: 130px;
+	padding: 4px 6px 2px 4px;
+	margin: 0 0 0 -10px;
+}
+
+/* arrow */
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category {
+	top: 0;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock {
+	top: 50px;
+	padding-top: 15px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock > .gnav_closeArea{
+	top: 27px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category #gnav_women,
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category #gnav_men,
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category #gnav_company{
+	background: url(../images/icon/arrow-ie.gif) left top no-repeat transparent;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category #gnav_kids,
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category #gnav_baby{
+	background: url(../images/icon/arrow-ie2.gif) left top no-repeat;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category #gnav_women{
+	background-position: 80px top;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category #gnav_men{
+	background-position: 156px top;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category #gnav_kids{
+	background-position: 235px top;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category #gnav_baby{
+	background-position: 315px top;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category #gnav_company{
+	background-position: 390px top;
+}
+
+/* end arrow */
+
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock > div {
+	height: 552px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock {
+	position: relative;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category .gnav_closeArea {
+	height: 28px !important;
+	position: absolute;
+	zoom: 1;
+	z-index: 10020;
+	right: 12px;
+	top: 12px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category .gnav_closeArea p {
+	height: 28px;
+	position: relative;
+	zoom: 1;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock,
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock,
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock {
+	display: block;
+	float: left;
+	position: relative;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li a {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	height: 17px;
+	display: inline;
+	zoom: 1;
+	width: 160px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock h1 {
+	display: inline;
+	height: 13px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li a,
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a {
+	display: inline;
+	zoom: 1;
+	height: 17px;
+	height: auto;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul {
+	background-color: #ebebeb;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li {
+	background-color: #ebebeb;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li a {
+	width: 318px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a {
+	width: 322px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock {
+	display: block;
+	float: left;
+	background-color: #fff;
+	height: 600px;
+	width: 158px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock h1 {
+	height: auto;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock h1 span,
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock h1 a {
+	display: inline;
+	zoom: 1;
+	height: auto;
+	width: 145px;
+	padding-top: 9px;
+	padding-bottom: 8px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock ul li a {
+	padding-top: 9px;
+	padding-bottom: 8px;
+	display: inline;
+	zoom: 1;
+	height: 20px;
+	height: auto;
+	width: 145px;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock ul li a:hover {
+	background-color: #ff0000;
+	color: #ffffff;
+}
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category .gnav_closeArea p span {
+	display: inline;
+}
+body.ltIE8.ltIE7 #gnav_header #gnav_search #searchFocus {
+	padding-top: 4px;
+}
+
+/* IE8 */
+body.ltIE8 #gnav_header h1,
+body.ltIE8 #gnav_header ul li a,
+body.ltIE8 #gnav_header p a {
+	font-family: "MS PGothic",Verdana,Helvetica,sans-serif;
+	border: none;
+	outline: none;
+}
+
+body.ltIE8 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li a,
+body.ltIE8 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li a,
+body.ltIE8 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a {
+	padding-top : 9px;
+	padding-bottom : 8px;
+	min-height: auto;
+}
+body.ltIE8 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul {
+	background-color: #ebebeb;
+}
+body.ltIE8 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li {
+	background-color: #ebebeb;
+}
+body.ltIE8 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock {
+	height: 552px;
+}
+body.ltIE8 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock ul li a {
+	font-size: 12px;
+	padding-top: 9px;
+	padding-bottom: 8px;
+	min-height: auto;
+}
+body.ltIE8 #gnav_header #navHeader div.gnav_thirdBlock ul li a span.iconNav {
+	background-position: right 2px;
+	zoom: 1;
+}
+body.ltIE8 #gnav_header #gnav_search #searchFocus {
+	height: auto;
+	padding-top: 2px;
+}
+
+/* MAC */
+body.mac #gnav_header h1,
+body.mac #gnav_header ul li a,
+body.mac #gnav_header p a {
+	font-family: "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","MS PGothic",Verdana,Helvetica,sans-serif;
+}
+body.mac #gnav_header #navHeader div.gnav_thirdBlock ul li a span.iconNav {
+	background-position: right 2px;
+}
+
+/* MAC lt OS X Lion */
+body.mac.ltWebK2 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul li a,
+body.mac.ltWebK2 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_secondBlock ul li a,
+body.mac.ltWebK2 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock ul li a {
+	height: 22px;
+}
+body.mac.ltWebK2 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock h1 {
+	height: 22px;
+}
+body.mac.ltWebK2 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock ul li a {
+	height: 22px;
+}
+
+/* ipad */
+body.ipad #gnav_header h1,
+body.ipad #gnav_header ul li a,
+body.ipad #gnav_header p a {
+	font-family: "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","MS PGothic",Verdana,Helvetica,sans-serif;
+}
+body.ipad #navHeader .gnav_category,
+body.ipad #navHeader .gnav_category .gnav_closeArea {
+	background-color: transparent;
+}
+body.ipad #navHeader .gnav_category .gnav_closeArea p span a {
+	display: block;
+	position: absolute;
+	padding: 0 5px 0 50px;
+	height: 50px;
+	right: 0;
+	z-index: 10050;
+}
+body.ipad #gnav_header #navHeader .gnav_category div.classBlock div.gnav_firstBlock ul {
+	margin-right: -1px;
+}
+
+/* android tab */
+body.androidTab #gnav_header #navHeader .gnav_category,
+body.androidTab #gnav_header #navHeader .gnav_category .gnav_closeArea {
+	background-color: transparent;
+}
+body.androidTab #gnav_header #navHeader .gnav_category .gnav_closeArea p span{
+	position: static;
+}
+body.androidTab #gnav_header #navHeader .gnav_category .gnav_closeArea p span a {
+	display: block;
+	position: absolute;
+	padding: 0 5px 0 50px;
+	height: 60px;
+	right: 0;
+	z-index: 10050;
+}
+
+
+/* 151009 add */
+
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock p.gnav_thirdBlock_ttl {
+	padding: 7px 15px 21px 10px;
+	color: #ff0000;
+	line-height: 18px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: table-cell;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock p.gnav_companyBlock_ttl {
+	font-size: 13px;
+	font-weight: bold;
+	color: #ff0000;
+	line-height: 18px;
+	display: table;
+	width: 100%;
+	height: 34px;
+}
+
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock p.gnav_companyBlock_ttl span,
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock p.gnav_companyBlock_ttl a {
+	color: #ff0000;
+	text-decoration: none;
+	display: table-cell;
+	padding: 7px 14px 5px;
+	filter: none;
+	vertical-align: middle;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock p.gnav_companyBlock_ttl a:hover {
+	color: #ffffff;
+	background-color: #ff0000;
+}
+
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock p.gnav_thirdBlock_ttl {
+	display: inline;
+	height: 13px;
+}
+
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock p.gnav_companyBlock_ttl {
+	height: auto;
+}
+
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock p.gnav_companyBlock_ttl span,
+body.ltIE8.ltIE7 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_companyBlock p.gnav_companyBlock_ttl a {
+	display: inline;
+	zoom: 1;
+	height: auto;
+	width: 145px;
+	padding-top: 9px;
+	padding-bottom: 8px;
+}
+
+body.ltIE8 #gnav_header p.gnav_thirdBlock_ttl,
+body.ltIE8 #gnav_header p.gnav_companyBlock_ttl {
+	font-family: "MS PGothic",Verdana,Helvetica,sans-serif;
+	border: none;
+	outline: none;
+}
+
+body.mac #gnav_header p.gnav_thirdBlock_ttl,
+body.mac #gnav_header p.gnav_companyBlock_ttl {
+	font-family: "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","MS PGothic",Verdana,Helvetica,sans-serif;
+}
+
+body.mac.ltWebK2 #gnav_header #navHeader .gnav_category div.classBlock div.gnav_thirdBlock p.gnav_thirdBlock_ttl {
+	height: 22px;
+}
+
+body.ipad #gnav_header p.gnav_thirdBlock_ttl,
+body.ipad #gnav_header p.gnav_companyBlock_ttl {
+	font-family: "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","MS PGothic",Verdana,Helvetica,sans-serif;
+}
+
+/* 151009 add end */

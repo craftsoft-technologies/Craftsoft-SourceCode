@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25B8C3CF-06E8-476C-B215-D20A656301B6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APP.Infrastructure.SsoManagement</RootNamespace>
+    <AssemblyName>APP.Infrastructure.SsoManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\Lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Lib\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="APP.Common">
+      <HintPath>..\..\..\Lib\APP.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="APP.Infrastructure.ConnectionStringManagement, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Lib\APP.Infrastructure.ConnectionStringManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonHelper.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\DataTypeHelper.cs" />
+    <Compile Include="Common\SsoEnum.cs" />
+    <Compile Include="Common\SsoFactory.cs" />
+    <Compile Include="Common\SsoHelper.cs" />
+    <Compile Include="Configuration\AppConfiguration.cs" />
+    <Compile Include="Cryto\SessionExCrypto.cs" />
+    <Compile Include="DAL\SessionModuleDAL.cs" />
+    <Compile Include="Model\CurrentUserInfo.cs" />
+    <Compile Include="Model\SessionInfo.cs" />
+    <Compile Include="Model\SsoSetting.cs" />
+    <Compile Include="Model\TotalOnlineSessionInfo.cs" />
+    <Compile Include="Modules\ISessionModule.cs" />
+    <Compile Include="Modules\SessionModule.cs" />
+    <Compile Include="Policies\ISignInPolicy.cs" />
+    <Compile Include="Policies\ISignOutPolicy.cs" />
+    <Compile Include="Policies\NormalSignInPolicy.cs" />
+    <Compile Include="Policies\NormalSignOutPolicy.cs" />
+    <Compile Include="Policies\SingleSignInPolicy.cs" />
+    <Compile Include="Policies\SingleSignOutPolicy.cs" />
+    <Compile Include="SsoManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

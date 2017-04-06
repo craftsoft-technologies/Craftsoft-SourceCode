@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountNumber" xml:space="preserve">
+    <value>Can only contain alphanumeric and -</value>
+  </data>
+  <data name="AffiliateCode" xml:space="preserve">
+    <value>Can only contain alphanumeric characters</value>
+  </data>
+  <data name="AffiliateNotFound" xml:space="preserve">
+    <value>Affiliate code not found :</value>
+  </data>
+  <data name="AffiliateNotFoundByCurrency" xml:space="preserve">
+    <value>Error, following affiliate not found or they don't belong to chosen currency :</value>
+  </data>
+  <data name="ApplicantQty" xml:space="preserve">
+    <value>Max Applicant  must greater than</value>
+  </data>
+  <data name="ApprovalTwice" xml:space="preserve">
+    <value>A promotion transaction cannot be approved twice, please refresh this page.</value>
+  </data>
+  <data name="AwardDescriptionMaxLength" xml:space="preserve">
+    <value>Award Description should less than 4000, </value>
+  </data>
+  <data name="ConditionEngMaxLength" xml:space="preserve">
+    <value>T&amp;C in English Language should less than 10000,</value>
+  </data>
+  <data name="ConditionIdnMaxLength" xml:space="preserve">
+    <value>T&amp;C in Indoneisa Language should less than 10000,</value>
+  </data>
+  <data name="ConditionKhmMaxLength" xml:space="preserve">
+    <value>T&amp;C in Khmer Language should less than 10000,</value>
+  </data>
+  <data name="ConditionThaMaxLength" xml:space="preserve">
+    <value>T&amp;C in Thai Language should less than 10000,</value>
+  </data>
+  <data name="ConditionVieMaxLength" xml:space="preserve">
+    <value>T&amp;C in Vietnamese Language should less than 10000,</value>
+  </data>
+  <data name="ConfirmCorrectOrder" xml:space="preserve">
+    <value>Please be sure to fill in the correct order to avoid delays in the time of payment</value>
+  </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>Confirm Email should be same as Email</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Confirm Password should be same as Password</value>
+  </data>
+  <data name="ContactNoExist" xml:space="preserve">
+    <value>Contact Number Existed</value>
+  </data>
+  <data name="ContactNumber" xml:space="preserve">
+    <value>Can only contain number</value>
+  </data>
+  <data name="DescriptionEngMaxLength" xml:space="preserve">
+    <value>Description in English Language should less than 10000,</value>
+  </data>
+  <data name="DescriptionIdnMaxLength" xml:space="preserve">
+    <value>Description in Indoneisa Language should less than 10000,</value>
+  </data>
+  <data name="DescriptionKhmMaxLength" xml:space="preserve">
+    <value>Description in Khmer Language should less than 10000,</value>
+  </data>
+  <data name="DescriptionThaMaxLength" xml:space="preserve">
+    <value>Description in Thai Language should less than 10000,</value>
+  </data>
+  <data name="DescriptionVieMaxLength" xml:space="preserve">
+    <value>Description in Vietnamese Language should less than 10000,</value>
+  </data>
+  <data name="EffectiveDateMaxLength" xml:space="preserve">
+    <value>Effective Date should less than 4000, </value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email Format is wrong</value>
+  </data>
+  <data name="EmailExist" xml:space="preserve">
+    <value>Email Exist</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error:  </value>
+  </data>
+  <data name="FieldDigits" xml:space="preserve">
+    <value>Must be number</value>
+  </data>
+  <data name="FieldFourDecimal" xml:space="preserve">
+    <value>Can only contain numbers up to four decimal places</value>
+  </data>
+  <data name="FieldRequired" xml:space="preserve">
+    <value>This field is required</value>
+  </data>
+  <data name="FieldTwoDecimal" xml:space="preserve">
+    <value>Can only contain numbers up to two decimal places</value>
+  </data>
+  <data name="FieldZeroDecimal" xml:space="preserve">
+    <value>Can only contain numbers up to Zero decimal places</value>
+  </data>
+  <data name="ForbiddenKeyword_Length" xml:space="preserve">
+    <value>Length must be between 3 to 13</value>
+  </data>
+  <data name="FourDigits" xml:space="preserve">
+    <value>Must be 4 digits</value>
+  </data>
+  <data name="FrequencyDate" xml:space="preserve">
+    <value>Frequency date to must greater than frequency date from.</value>
+  </data>
+  <data name="FrequencyTime" xml:space="preserve">
+    <value>Frequency time to must greater than frequency time from.</value>
+  </data>
+  <data name="FrequencyTimeFrom" xml:space="preserve">
+    <value>Format Time From is wrong</value>
+  </data>
+  <data name="FrequencyTimeTo" xml:space="preserve">
+    <value>Format Time To is wrong</value>
+  </data>
+  <data name="HowToApplyMaxLength" xml:space="preserve">
+    <value>How To Apply  should less than 4000, </value>
+  </data>
+  <data name="IncorrectAmount" xml:space="preserve">
+    <value>Incorrect amount : </value>
+  </data>
+  <data name="Int_NegativeOnebillion_OneBillion_NoZero" xml:space="preserve">
+    <value>Must be a number between -1,000,000,000 and 1,000,000,000, except 0</value>
+  </data>
+  <data name="Int_One_OneBillion" xml:space="preserve">
+    <value>Must be between 1 and 1,000,000,000</value>
+  </data>
+  <data name="Int_Zero_OneBillion" xml:space="preserve">
+    <value>Must be between 0 and 1,000,000,000</value>
+  </data>
+  <data name="Invalid_BetNo" xml:space="preserve">
+    <value>Can only contain number</value>
+  </data>
+  <data name="Invalid_DrawNo" xml:space="preserve">
+    <value>Can only contain number</value>
+  </data>
+  <data name="Invalid_Time" xml:space="preserve">
+    <value>Invalid Time, format should be like hh:mm:ss</value>
+  </data>
+  <data name="Invalid_Time_Without_Second" xml:space="preserve">
+    <value>Invalid Time, format should be like hh:mm</value>
+  </data>
+  <data name="KeywordExists" xml:space="preserve">
+    <value>Keyword already exists</value>
+  </data>
+  <data name="Length_Fifteen" xml:space="preserve">
+    <value>Length should less than 15</value>
+  </data>
+  <data name="Length_Fifty" xml:space="preserve">
+    <value>Length should less than 50</value>
+  </data>
+  <data name="Length_Five_Twenty" xml:space="preserve">
+    <value>Length should between 5 to 20</value>
+  </data>
+  <data name="Length_FourThousand" xml:space="preserve">
+    <value>Length should less than 4000</value>
+  </data>
+  <data name="Length_OneHundred" xml:space="preserve">
+    <value>Length should less than 100</value>
+  </data>
+  <data name="Length_OneHundredFifty" xml:space="preserve">
+    <value>Length should less than 150</value>
+  </data>
+  <data name="Length_Six_Eleven" xml:space="preserve">
+    <value>Length should between 6 to 11</value>
+  </data>
+  <data name="Length_Six_Twenty" xml:space="preserve">
+    <value>Length should between 6 to 20</value>
+  </data>
+  <data name="Length_Thirty" xml:space="preserve">
+    <value>Length should less than 30</value>
+  </data>
+  <data name="Length_ThreeHundred" xml:space="preserve">
+    <value>Length should less than 300</value>
+  </data>
+  <data name="Length_Twenty" xml:space="preserve">
+    <value>Length should less than 20</value>
+  </data>
+  <data name="Length_TwoHundred" xml:space="preserve">
+    <value>Length should less than 200</value>
+  </data>
+  <data name="Length_Two_Twenty" xml:space="preserve">
+    <value>Length should between 2 to 20</value>
+  </data>
+  <data name="LoginName" xml:space="preserve">
+    <value>Can only contain alphanumeric characters</value>
+  </data>
+  <data name="LoginName_Exist" xml:space="preserve">
+    <value>LoginName Exist</value>
+  </data>
+  <data name="LoginName_Length" xml:space="preserve">
+    <value>Length should between 6 to 15</value>
+  </data>
+  <data name="MemberNotFound" xml:space="preserve">
+    <value>Member code not found : </value>
+  </data>
+  <data name="MemberNotFoundByCurrency" xml:space="preserve">
+    <value>Error, following members not found or they don't belong to chosen currency :</value>
+  </data>
+  <data name="OneBillion_WithSign" xml:space="preserve">
+    <value>Must be between -1,000,000,000 and 1,000,000,000</value>
+  </data>
+  <data name="PasswordContent" xml:space="preserve">
+    <value>Password must not contain your login name</value>
+  </data>
+  <data name="PasswordLength" xml:space="preserve">
+    <value>Password must be at least 6 characters long and contain at least one number and one character.</value>
+  </data>
+  <data name="PasswordPolicy" xml:space="preserve">
+    <value>Must contain at least one number and one alphabet</value>
+  </data>
+  <data name="PasswordSame" xml:space="preserve">
+    <value>New password must not be same as your current password</value>
+  </data>
+  <data name="Please_Input_Captcha" xml:space="preserve">
+    <value>Please input captcha</value>
+  </data>
+  <data name="Please_Input_Loginname" xml:space="preserve">
+    <value>Please input login name</value>
+  </data>
+  <data name="Please_Input_Password" xml:space="preserve">
+    <value>Please input password</value>
+  </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>Can only contain number and alphanumeric</value>
+  </data>
+  <data name="PromotionCodeExist" xml:space="preserve">
+    <value>Promotion Code Already Exists : </value>
+  </data>
+  <data name="PromotionError" xml:space="preserve">
+    <value>Error : Please fill out these fields : </value>
+  </data>
+  <data name="PromotionNameExists" xml:space="preserve">
+    <value>Error :Promotion Name Already Exists, please update it and try again.</value>
+  </data>
+  <data name="PromotionNameMaxLength" xml:space="preserve">
+    <value>Promotion Name  should less than 12, </value>
+  </data>
+  <data name="PromotionWarning" xml:space="preserve">
+    <value>Warning : </value>
+  </data>
+  <data name="QuickLoginName_Length" xml:space="preserve">
+    <value>Length should between 6 to 13</value>
+  </data>
+  <data name="RicheeLoginName_Length" xml:space="preserve">
+    <value>Length should between 6 to 14</value>
+  </data>
+  <data name="RoutineDay" xml:space="preserve">
+    <value>Frequency day to must greater than frequency day from.</value>
+  </data>
+  <data name="RoutineMonth" xml:space="preserve">
+    <value>Frequency month to must greater than frequency month from .</value>
+  </data>
+  <data name="RuleDescriptionMaxLength" xml:space="preserve">
+    <value>Rule Description  should less than 4000, </value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>Url Format is wrong</value>
+  </data>
+</root>
