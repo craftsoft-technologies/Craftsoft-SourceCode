@@ -292,7 +292,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CDN\base\design\css\Site.css" />
-    <Content Include="CDN\base\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="CDN\base\js\ai.0.22.9-build00167.js" />
     <Content Include="CDN\base\js\ai.0.22.9-build00167.min.js" />
     <Content Include="CDN\demo\design\css\all.css" />
@@ -637,6 +636,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Scripts\angular-animate.js" />
     <Content Include="Scripts\angular-animate.min.js" />
@@ -1404,6 +1406,11 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="Scripts\jquery-2.2.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.2.4.js" />
     <Content Include="Scripts\jquery-2.2.4.min.js" />
@@ -1503,6 +1510,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="CDN\base\design\images\email\" />
+    <Folder Include="CDN\base\fonts\" />
     <Folder Include="StaticPages\" />
     <Folder Include="_Partners\Demo\App_GlobalResources\" />
     <Folder Include="_Partners\Demo\Configuration\Ref\" />
@@ -1523,10 +1531,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="CDN\base\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="CDN\base\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="CDN\base\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="CDN\base\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="CDN\base\js\jquery-1.10.2.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
