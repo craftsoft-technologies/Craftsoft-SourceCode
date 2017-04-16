@@ -22,6 +22,7 @@ body{
 font:13px "メイリオ",'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro',"ＭＳ Ｐゴシック",sans-serif;
 color: #000000;
 background: #e6e6e6;
+height:auto !important;
 }
 
 table{
