@@ -53,15 +53,8 @@ namespace APP.Web.Common.Mvc
 
         public static MvcHtmlString LabelFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, TProperty>> expression, string labelText, object htmlAttributes)
         {
-            //return htmlHelper.LabelFor(expression, labelText);
-
             ModelMetadata metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
             string htmlFieldName = ExpressionHelper.GetExpressionText(expression);
-            //string labelText = metadata.DisplayName ?? metadata.PropertyName ?? htmlFieldName.Split('.').Last();
-            //if (String.IsNullOrEmpty(labelText))
-            //{
-            //    return MvcHtmlString.Empty;
-            //}
 
             TagBuilder tag = new TagBuilder("label");
             tag.MergeAttributes(new RouteValueDictionary(htmlAttributes));

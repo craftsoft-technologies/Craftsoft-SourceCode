@@ -33,7 +33,7 @@ namespace APP.Common.Utilities
             RijndaelManaged RijndaelCipher = new RijndaelManaged();
 
             // First we need to turn the input strings into a byte array.
-            byte[] PlainText = System.Text.Encoding.Unicode.GetBytes(stringToEncrypt);
+            byte[] PlainText = Encoding.Unicode.GetBytes(stringToEncrypt);
 
             // We are using salt to make it harder to guess our key
             // using a dictionary attack.
@@ -122,8 +122,8 @@ namespace APP.Common.Utilities
 
         public static string MD5Crypto(string strPassword)
         {
-            System.Security.Cryptography.MD5CryptoServiceProvider hasher = new System.Security.Cryptography.MD5CryptoServiceProvider();
-            byte[] bs = System.Text.Encoding.UTF8.GetBytes(strPassword);
+            MD5CryptoServiceProvider hasher = new MD5CryptoServiceProvider();
+            byte[] bs = Encoding.UTF8.GetBytes(strPassword);
             bs = hasher.ComputeHash(bs);
             StringBuilder stringBuilder = new StringBuilder();
             foreach (byte b in bs)
@@ -135,8 +135,8 @@ namespace APP.Common.Utilities
 
         public static string SHACrypto(string strPassword)
         {
-            System.Security.Cryptography.SHA1CryptoServiceProvider hasher = new System.Security.Cryptography.SHA1CryptoServiceProvider();
-            byte[] bs = System.Text.Encoding.UTF8.GetBytes(strPassword);
+            SHA1CryptoServiceProvider hasher = new SHA1CryptoServiceProvider();
+            byte[] bs = Encoding.UTF8.GetBytes(strPassword);
             bs = hasher.ComputeHash(bs);
 
             StringBuilder stringBuilder = new StringBuilder();

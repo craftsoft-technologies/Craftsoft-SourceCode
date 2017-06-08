@@ -150,14 +150,14 @@ namespace APP.Common.DAL
         #region Private Method
         public DBException TranslateException(SqlException ex)
         {      
-            APP.Common.Logger.FileLogger.Instance.Exception(ex);
+            Logger.FileLogger.Instance.Exception(ex);
 
-            APP.Common.Logger.FileLogger.Instance.Info("GCT.Common - DAL - Translate Exception");
-            APP.Common.Logger.FileLogger.Instance.Info("Exception Number: " + ex.Number.ToString());
-            APP.Common.Logger.FileLogger.Instance.Info("Exception Message: " + ex.Message);
+            Logger.FileLogger.Instance.Info("APP.Common - DAL - Translate Exception");
+            Logger.FileLogger.Instance.Info("Exception Number: " + ex.Number.ToString());
+            Logger.FileLogger.Instance.Info("Exception Message: " + ex.Message);
             if (ex.InnerException != null)
             {
-                APP.Common.Logger.FileLogger.Instance.Info("Exception Inner Exception: " + ex.InnerException.Message);
+                Logger.FileLogger.Instance.Info("Exception Inner Exception: " + ex.InnerException.Message);
             }
 
             switch (ex.Number)
